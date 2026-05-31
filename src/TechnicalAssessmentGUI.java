@@ -22,6 +22,9 @@ public class TechnicalAssessmentGUI {
         JButton checkButton = new JButton("Check");
         checkButton.setBounds(150, 70, 100, 30);
 
+        //IMPROVED: Added RootPane ENTER key; triggers checkButton
+        frame.getRootPane().setDefaultButton(checkButton);
+
         //RESULT AREA
         JTextArea resultArea = new JTextArea();
         resultArea.setBounds(30, 120, 300, 100);
