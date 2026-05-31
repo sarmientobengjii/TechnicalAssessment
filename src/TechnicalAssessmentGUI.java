@@ -54,7 +54,7 @@ public class TechnicalAssessmentGUI {
 
             } catch (NumberFormatException ex) { // THIS METHOD HANDLES THE ERRORS FROM CODES INSIDE THE TRY TO AVOID CRASHING.
 
-                resultArea.setText("Invalid input. Please enter numbers only."); //THIS MEANS (resultArea.setText)PASS-THIS-OBJECT.TO-THIS-FUNCTION.
+                resultArea.setText("Invalid input. Please enter numbers only."); //THIS MEANS (resultArea.setText)PASS-THIS-OBJECT.TO-THIS-FUNCTION > DISPLAY USING SET-TEXT.
             }
 
         });
