@@ -8,50 +8,49 @@ public class TechnicalAssessment {
         System.out.println("Enter number: ");
         int number = scanner.nextInt();
 
-        isNumberPrime(number);
-        factorial(number);
+        getPrimeResult(number);
+        getFactorialResult(number);
     }
 
-    public static void isNumberPrime(int number) {
+    public static String getPrimeResult(int number) {
 
         if (number < 2) {
-            System.out.println("Invalid number");
-            return;
+            return number + " is not a prime number";
         }
 
-        boolean isNumberPrime = true;
+        boolean isPrime = true;
 
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
-                isNumberPrime = false;
+                isPrime = false;
                 break;
             }
         }
 
-        if (isNumberPrime) {
-            System.out.println(number + " is a prime number");
+        if (isPrime) {
+            return number + " is a prime number";
         } else {
-            System.out.println(number + " is not a prime number");
+            return number + " is not a prime number";
         }
     }
 
-    public static void factorial(int number) {
+    public static String getFactorialResult(int number) {
 
         int result = 1;
 
         if (number > 12) {
-            System.out.println("integer overflow!");
-            return;
+            return "INTEGER OVERFLOW!";
+
         }
         if (number < 0) {
-            System.out.println("Factorial not defined by negative number");
-            return;
+            return "Factorial not defined by negative number";
         }
 
         while (number > 1) {
             result = result * number;
             number--;
         }
-        System.out.println("Factorial result: " + result);
+
+        return "Factorial result: " + result;
     }
 }
