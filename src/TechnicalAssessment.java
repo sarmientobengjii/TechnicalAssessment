@@ -9,7 +9,7 @@ public class TechnicalAssessment {
         System.out.println("Enter number: ");
         int number = scanner.nextInt();
 
-        //METHOD CALLS TO ACCESS THE PRINT-RESULT & FACTORIAL-RESULT FUNCTIONALITIES FROM BACKEND TO FRONTEND(GUI)
+        //METHOD CALLS TO ACCESS PRINT-RESULT & FACTORIAL-RESULT FUNCTIONALITIES FROM BACKEND TO FRONTEND(GUI)
         getPrimeResult(number);
         getFactorialResult(number);
     }
