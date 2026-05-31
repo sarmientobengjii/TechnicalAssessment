@@ -17,10 +17,11 @@ public class TechnicalAssessment {
     public static String getPrimeResult(int number) {
 
         /*
-            Prime = IF A GIVEN NUMBER THAT'S GREATER THAN ONE(1) CAN ONLY BE DIVIDED INTO 1 AND ITSELF
-                EXAMPLE: NUMBER % i == 1 MEANS PRIME; THERES A REMAINDER SO IT CAN'T BE DIVIDED EQUALLY.
-            Not Prime = IF A GIVEN NUMBER THAT'S GREATER THAN ONE(1) CAN BE DIVIDED EQUALLY.
-                EXAMPLE: NUMBER % i == 0 MEANS NOT PRIME; NO REMAINDER.
+            Prime = A GIVEN NUMBER GREATER THAN ONE(1) THAT CAN ONLY BE DIVIDED EVENLY BY 1 AND ITSELF
+                EXAMPLE: IF THE GIVEN NUMBER CAN BE DIVIDED EVENLY, THE IT'S NOT PRIME
+            Not Prime = A GIVEN NUMBER GREATER THAN ONE(1) THAT CAN BE DIVIDED EVENLY
+                BY NUMBERS OTHER THAN ONE(1) AND ITSELF.
+                EXAMPLE: NUMBER % i == 0 MEANS NOT PRIME BECAUSE THERE'S NO REMAINDER.
         */
 
         if (number < 2) {
@@ -34,6 +35,7 @@ public class TechnicalAssessment {
         // possible divisors up to the square root of the given number.
 
         for (int i = 2; i <= Math.sqrt(number); i++) {
+
             /*
             * boolean isPrime = true; sets the default condition prime logic as "TRUE"
             * int i = 2 = we setup i = 2 as our default starting point because 1 is not considered a prime number,
