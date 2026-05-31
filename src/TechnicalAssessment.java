@@ -29,7 +29,11 @@ public class TechnicalAssessment {
 
         boolean isPrime = true;
 
-        for (int i = 2; i < number; i++) {
+        // Instead of (int i = 2; i < number; i++), I used Math.sqrt() for a more optimized and faster loop execution.
+        // Instead of looping through the entire number, the loop only checks
+        // possible divisors up to the square root of the given number.
+
+        for (int i = 2; i <= Math.sqrt(number); i++) {
             /*
             * boolean isPrime = true; sets the default condition prime logic as "TRUE"
             * int i = 2 = we setup i = 2 as our default starting point because 1 is not considered a prime number,
